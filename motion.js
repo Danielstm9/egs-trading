@@ -206,8 +206,10 @@
     heroIntro
       .set('.hero__title-row', { autoAlpha: 0, y: 46 })
       .set('.hero__scroll-cta, .hero__year', { autoAlpha: 0, y: 14 })
+      .set('.hero__frame-mark', { autoAlpha: 0 })
       .to('.hero__title-row', { autoAlpha: 1, y: 0, duration: 1.1, ease: 'power3.out', stagger: 0.12 })
-      .to('.hero__scroll-cta, .hero__year', { autoAlpha: 1, y: 0, duration: 0.8, ease: 'power2.out', stagger: 0.1 }, '-=0.55');
+      .to('.hero__scroll-cta, .hero__year', { autoAlpha: 1, y: 0, duration: 0.8, ease: 'power2.out', stagger: 0.1 }, '-=0.55')
+      .to('.hero__frame-mark', { autoAlpha: 1, duration: 1, ease: 'power1.out', stagger: 0.08 }, '-=0.7');
 
     if (!isTouch && heroInner) {
       const heroX = gsap.quickTo(heroInner, 'x', { duration: 0.9, ease: 'power2.out' });
@@ -230,7 +232,7 @@
       heroTl
         .to('.hero__title-row', { yPercent: -16, opacity: 0, filter: 'blur(6px)', ease: 'none', stagger: 0.05 }, 0)
         .to('.hero__footer', { opacity: 0, y: 30, ease: 'none' }, 0.05)
-        .to('.hero__year', { opacity: 0, ease: 'none' }, 0);
+        .to('.hero__year, .hero__frame-mark', { opacity: 0, ease: 'none' }, 0);
       if (heroCanvas) heroTl.to(heroCanvas, { scale: 1.25, filter: 'brightness(0.55)', ease: 'none' }, 0);
 
       return () => heroTl.scrollTrigger && heroTl.scrollTrigger.kill();
@@ -276,6 +278,32 @@
     { opacity: 0, y: 24 },
     { opacity: 1, y: 0, duration: 0.8, ease: 'power2.out', scrollTrigger: { trigger: '.footer', start: 'top 92%' } }
   );
+
+  /* ---------------------------------------------------------
+     Scene entrances — a subtle "camera settling on a new shot"
+     scale/brightness applied to whole sections as they arrive.
+     Only on sections with no position:sticky descendants (a
+     transformed ancestor breaks sticky positioning), and only
+     scale/filter — never opacity — so it layers under each
+     section's own per-element reveals rather than fighting them.
+  --------------------------------------------------------- */
+  mm.add(DESKTOP, () => {
+    ['.manifesto', '.contact', '.footer'].forEach((selector) => {
+      const el = document.querySelector(selector);
+      if (!el) return;
+      gsap.fromTo(
+        el,
+        { scale: 1.035, filter: 'brightness(0.94)' },
+        {
+          scale: 1,
+          filter: 'brightness(1)',
+          duration: 1.3,
+          ease: 'power2.out',
+          scrollTrigger: { trigger: el, start: 'top 80%', toggleActions: 'play none none reverse' },
+        }
+      );
+    });
+  });
 
   /* ---------------------------------------------------------
      Activité — staggered principle rows + progress rail
