@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mentions légales — EGS Trading</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=5" />
+  <style>
+    .legal-page { padding: 140px 0 100px; min-height: 80vh; }
+    .legal-page h1 {
+      font-family: var(--font-head); font-size: clamp(2rem, 4vw, 3.5rem);
+      font-weight: 300; color: var(--black); letter-spacing: -.02em;
+      margin-bottom: 60px; line-height: 1.1;
+    }
+    .legal-page h2 {
+      font-family: var(--font-body); font-size: .7rem; font-weight: 600;
+      letter-spacing: .18em; text-transform: uppercase; color: var(--burgundy);
+      margin-top: 48px; margin-bottom: 16px;
+    }
+    .legal-page p, .legal-page li {
+      font-size: .875rem; font-weight: 300; color: var(--gray-800);
+      line-height: 1.85; max-width: 720px;
+    }
+    .legal-page ul { list-style: disc; padding-left: 1.5rem; margin-top: 8px; }
+    .legal-page ul li { margin-bottom: 4px; }
+    .legal-page a { color: var(--burgundy); }
+    .legal-back {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: .65rem; font-weight: 500; letter-spacing: .15em;
+      text-transform: uppercase; color: var(--gray-500);
+      margin-bottom: 48px; transition: color .3s;
+    }
+    .legal-back:hover { color: var(--burgundy); }
+    .legal-back svg { transition: transform .3s; }
+    .legal-back:hover svg { transform: translateX(-3px); }
+  </style>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <header class="header scrolled" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <img src="logo.svg" alt="EGS Trading" class="nav__logo-img" />
+      </a>
+    </nav>
+  </header>
+
+  <main class="legal-page">
+    <div class="container">
+
+      <a href="index.html" class="legal-back">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M13 7H1M7 13l-6-6 6-6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Retour au site
+      </a>
+
+      <h1>Mentions légales</h1>
+
+      <h2>Éditeur du site</h2>
+      <p>
+        <strong>EGS Trading</strong><br>
+        Société par actions simplifiée (SAS)<br>
+        SIREN : 942 706 870<br>
+        Siège social : 233 Chemin de Bellevue, 84260 Sarrians, France<br>
+        Email : <a href="mailto:contact@egs-trading.fr">contact@egs-trading.fr</a>
+      </p>
+
+      <h2>Directeur de la publication</h2>
+      <p>Le directeur de la publication est le représentant légal d'EGS Trading.</p>
+
+      <h2>Hébergement</h2>
+      <p>
+        Ce site est hébergé par :<br>
+        <strong>Hostinger International Ltd</strong><br>
+        61 Lordou Vironos Street, 6023 Larnaca, Chypre<br>
+        <a href="https://www.hostinger.fr" target="_blank" rel="noopener">www.hostinger.fr</a>
+      </p>
+
+      <h2>Propriété intellectuelle</h2>
+      <p>
+        L'ensemble du contenu de ce site (textes, graphismes, logotypes, images) est la propriété exclusive
+        d'EGS Trading et est protégé par les lois françaises et internationales relatives à la propriété
+        intellectuelle. Toute reproduction, représentation ou diffusion, en tout ou partie, est interdite
+        sans l'autorisation expresse d'EGS Trading.
+      </p>
+
+      <h2>Données personnelles</h2>
+      <p>
+        Les informations recueillies via le formulaire de contact sont uniquement destinées à EGS Trading
+        et ne sont transmises à aucun tiers. Conformément à la loi « Informatique et Libertés » du
+        6 janvier 1978 modifiée et au Règlement (UE) 2016/679 (RGPD), vous disposez d'un droit d'accès,
+        de rectification et de suppression de vos données. Pour exercer ce droit, contactez-nous à :
+        <a href="mailto:contact@egs-trading.fr">contact@egs-trading.fr</a>
+      </p>
+
+      <h2>Cookies</h2>
+      <p>
+        Ce site utilise uniquement un cookie fonctionnel pour mémoriser la langue sélectionnée (français
+        ou anglais). Ce cookie ne collecte aucune donnée personnelle et n'est pas partagé avec des tiers.
+      </p>
+
+      <h2>Responsabilité</h2>
+      <p>
+        EGS Trading met tout en œuvre pour assurer l'exactitude et la mise à jour des informations
+        diffusées sur ce site. Toutefois, EGS Trading ne peut garantir l'exactitude, la précision ou
+        l'exhaustivité des informations mises à la disposition sur ce site et décline toute responsabilité
+        pour toute imprécision, inexactitude ou omission.
+      </p>
+
+      <h2>Droit applicable</h2>
+      <p>
+        Le présent site et les présentes mentions légales sont soumis au droit français. En cas de litige,
+        les tribunaux français seront seuls compétents.
+      </p>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__bottom">
+        <p class="footer__legal">
+          &copy; 2025 EGS Trading &mdash; SIREN 942 706 870
+        </p>
+        <div class="footer__legal-links">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <span>·</span>
+          <a href="cgv.html">CGV</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=5"></script>
+</body>
+</html>
