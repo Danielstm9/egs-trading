@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EGS Trading — Négoce international FMCG & Commodities</title>
+  <meta name="description" content="EGS Trading — Négoce international FMCG & Commodities. Sourcing, structuration et exécution de transactions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=5" />
+</head>
+<body>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress"><span></span></div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ==============================
+       NAVIGATION
+  =============================== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#top" class="nav__logo">
+        <img src="logo.svg" alt="EGS Trading" class="nav__logo-img" />
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#activite" class="nav__link" data-i18n="nav.activity">Activité</a></li>
+        <li><a href="#marches"  class="nav__link" data-i18n="nav.markets">Marchés</a></li>
+        <li><a href="#approche" class="nav__link" data-i18n="nav.approach">Approche</a></li>
+        <li><a href="#contact"  class="nav__link" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="nav__right">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button class="nav__burger" id="burger" aria-label="Menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==============================
+       HERO
+  =============================== -->
+  <section class="hero" id="top">
+    <canvas class="hero__canvas" id="heroCanvas"></canvas>
+    <div class="hero__grain"></div>
+    <div class="hero__frame" aria-hidden="true">
+      <span class="hero__frame-mark hero__frame-mark--tl"></span>
+      <span class="hero__frame-mark hero__frame-mark--tr"></span>
+      <span class="hero__frame-mark hero__frame-mark--bl"></span>
+      <span class="hero__frame-mark hero__frame-mark--br"></span>
+    </div>
+    <div class="container hero__inner">
+      <h1 class="hero__title">
+        <span class="hero__title-row reveal-line" data-i18n="hero.line1">Sourcing.</span>
+        <span class="hero__title-row hero__title-row--indent reveal-line" data-i18n="hero.line2">Structuration.</span>
+        <span class="hero__title-row hero__title-row--light reveal-line" data-i18n="hero.line3">Exécution.</span>
+      </h1>
+      <div class="hero__footer">
+        <a href="#activite" class="hero__scroll-cta reveal-up">
+          <span data-i18n="hero.cta">Découvrir</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7l6 6 6-6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero__year">2025</div>
+  </section>
+
+  <div class="seam" aria-hidden="true"><span></span></div>
+
+  <!-- ==============================
+       INTRO
+  =============================== -->
+  <section class="manifesto">
+    <div class="container">
+      <div class="manifesto__wrapper reveal-up">
+        <span class="manifesto__eyebrow" data-i18n="intro.label">Introduction</span>
+        <blockquote class="manifesto__quote" data-i18n="intro.text">
+          EGS Trading intervient sur des opérations de négoce en produits de grande consommation et matières premières. La société développe, structure et réalise des transactions avec des producteurs, distributeurs et acheteurs professionnels.
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <div class="seam" aria-hidden="true"><span></span></div>
+
+  <!-- ==============================
+       ACTIVITÉ
+  =============================== -->
+  <section class="about" id="activite">
+    <div class="container about__grid">
+
+      <div class="about__sticky">
+        <span class="section-label reveal-up" data-i18n="activity.label">Activité</span>
+        <h2 class="about__title reveal-up" data-i18n="activity.title">
+          L'ensemble du<br>cycle de<br>transaction.
+        </h2>
+        <div class="about__rule reveal-up"></div>
+        <div class="rail" data-rail aria-hidden="true"><span class="rail__fill"></span></div>
+        <div class="about__stats reveal-up">
+          <div class="about__stat">
+            <span class="about__stat-n">2025</span>
+            <span class="about__stat-l" data-i18n="activity.stat1">Fondée en</span>
+          </div>
+          <div class="about__stat">
+            <div class="about__stat-dual">
+              <span class="about__stat-n">FMCG</span>
+              <span class="about__stat-n" data-i18n="activity.stat2">Commodities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__content">
+        <div class="about__principles">
+          <div class="principle reveal-up">
+            <div class="principle__head">
+              <span class="principle__num">01</span>
+              <h3 data-i18n="activity.p1h">Sourcing</h3>
+            </div>
+            <p data-i18n="activity.p1t">Identification et sélection de sources d'approvisionnement adaptées, en fonction des volumes, des spécifications et des conditions marché.</p>
+          </div>
+          <div class="principle reveal-up">
+            <div class="principle__head">
+              <span class="principle__num">02</span>
+              <h3 data-i18n="activity.p2h">Commercialisation</h3>
+            </div>
+            <p data-i18n="activity.p2t">Mise en place et suivi de débouchés auprès d'acheteurs professionnels, principalement sur des volumes significatifs.</p>
+          </div>
+          <div class="principle reveal-up">
+            <div class="principle__head">
+              <span class="principle__num">03</span>
+              <h3 data-i18n="activity.p3h">Structuration des opérations</h3>
+            </div>
+            <p data-i18n="activity.p3t">Définition des paramètres de chaque transaction.</p>
+            <div class="principle__tags">
+              <span data-i18n="activity.tag1">Prix</span>
+              <span data-i18n="activity.tag2">Volumes</span>
+              <span data-i18n="activity.tag3">Incoterms</span>
+              <span data-i18n="activity.tag4">Logistique</span>
+              <span data-i18n="activity.tag5">Conditions contractuelles</span>
+            </div>
+          </div>
+          <div class="principle reveal-up">
+            <div class="principle__head">
+              <span class="principle__num">04</span>
+              <h3 data-i18n="activity.p4h">Conditions de paiement</h3>
+            </div>
+            <p data-i18n="activity.p4t">Solutions adaptées selon les opérations : paiement comptant, différé, ou structuration spécifique selon les contreparties.</p>
+          </div>
+          <div class="principle reveal-up">
+            <div class="principle__head">
+              <span class="principle__num">05</span>
+              <h3 data-i18n="activity.p5h">Exécution</h3>
+            </div>
+            <p data-i18n="activity.p5t">Coordination et suivi des opérations jusqu'à leur aboutissement.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="seam seam--dark" aria-hidden="true"><span></span></div>
+
+  <!-- ==============================
+       MARCHÉS
+  =============================== -->
+  <section class="markets" id="marches">
+    <div class="container">
+      <div class="markets__header reveal-up">
+        <span class="section-label section-label--light" data-i18n="markets.label">Marchés</span>
+        <h2 class="markets__title" data-i18n="markets.title">Nos marchés</h2>
+      </div>
+      <div class="markets__grid">
+        <article class="market-card reveal-up">
+          <div class="market-card__num">I</div>
+          <div class="market-card__body">
+            <h3 data-i18n="markets.m1h">FMCG</h3>
+            <p data-i18n="markets.m1t">Boissons, produits alimentaires et autres références à forte rotation.</p>
+            <div class="market-card__tags">
+              <span data-i18n="markets.m1t1">Boissons</span>
+              <span data-i18n="markets.m1t2">Alimentaire</span>
+              <span data-i18n="markets.m1t3">Hygiène</span>
+            </div>
+          </div>
+          <div class="market-card__arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </article>
+        <article class="market-card reveal-up">
+          <div class="market-card__num">II</div>
+          <div class="market-card__body">
+            <h3 data-i18n="markets.m2h">Commodities</h3>
+            <p data-i18n="markets.m2t">Produits agricoles et matières premières sélectionnées.</p>
+            <div class="market-card__tags">
+              <span data-i18n="markets.m2t1">Agricole</span>
+              <span data-i18n="markets.m2t2">Matières premières</span>
+            </div>
+          </div>
+          <div class="market-card__arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="seam" aria-hidden="true"><span></span></div>
+
+  <!-- ==============================
+       NOS CLIENTS
+  =============================== -->
+  <section class="approach" id="approche">
+    <div class="container approach__grid">
+
+      <div class="approach__left">
+        <span class="section-label reveal-up" data-i18n="clients.label">Nos clients</span>
+        <h2 class="approach__title reveal-up" data-i18n="clients.title">
+          Avec qui<br>nous travaillons.
+        </h2>
+        <div class="rail" data-rail aria-hidden="true"><span class="rail__fill"></span></div>
+      </div>
+
+      <div class="approach__right">
+        <p class="approach__goal reveal-up" data-i18n="clients.intro">
+          EGS Trading travaille exclusivement avec des professionnels — entreprises, industriels et opérateurs qui nécessitent volumes, réactivité et coordination.
+        </p>
+        <div class="approach__divider reveal-up"></div>
+        <div class="clients__grid reveal-up">
+          <div class="client-type">
+            <span class="client-type__num">01</span>
+            <h3 data-i18n="clients.c1h">Producteurs &amp; industriels</h3>
+            <p data-i18n="clients.c1t">Fabricants et producteurs cherchant à écouler des volumes sur de nouveaux marchés ou à optimiser leurs flux de vente.</p>
+          </div>
+          <div class="client-type">
+            <span class="client-type__num">02</span>
+            <h3 data-i18n="clients.c2h">Distributeurs &amp; grossistes</h3>
+            <p data-i18n="clients.c2t">Opérateurs de distribution ayant des besoins d'approvisionnement réguliers en produits FMCG ou matières premières.</p>
+          </div>
+          <div class="client-type">
+            <span class="client-type__num">03</span>
+            <h3 data-i18n="clients.c3h">Acheteurs professionnels</h3>
+            <p data-i18n="clients.c3t">Entreprises intervenant sur des marchés internationaux, à la recherche de sources fiables et de conditions compétitives.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="seam" aria-hidden="true"><span></span></div>
+
+  <!-- ==============================
+       CONTACT
+  =============================== -->
+  <section class="contact" id="contact">
+    <div class="container contact__grid">
+
+      <div class="contact__left">
+        <span class="section-label reveal-up" data-i18n="contact.label">Contact</span>
+        <h2 class="contact__title reveal-up" data-i18n="contact.title">
+          Pour toute<br>demande.
+        </h2>
+        <div class="contact__info">
+          <a href="mailto:contact@egs-trading.com" class="contact__info-row reveal-up">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+            <span>contact@egs-trading.com</span>
+          </a>
+          <div class="contact__info-row reveal-up">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+            <span>233 Chemin de Bellevue<br>84260 Sarrians, France</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__right reveal-up">
+        <form class="form" id="contactForm" method="post" action="contact.php" novalidate>
+          <div class="form__row">
+            <div class="form__field">
+              <label data-i18n="form.name">Nom</label>
+              <input type="text" name="nom" required data-i18n-placeholder="form.namePh" placeholder="Votre nom" />
+            </div>
+            <div class="form__field">
+              <label data-i18n="form.company">Société</label>
+              <input type="text" name="societe" data-i18n-placeholder="form.companyPh" placeholder="Votre société" />
+            </div>
+          </div>
+          <div class="form__field">
+            <label data-i18n="form.email">Email</label>
+            <input type="email" name="email" required placeholder="votre@email.com" />
+          </div>
+          <div class="form__field">
+            <label data-i18n="form.message">Message</label>
+            <textarea name="message" required rows="5" data-i18n-placeholder="form.messagePh" placeholder="Décrivez votre projet..."></textarea>
+          </div>
+          <button type="submit" class="form__submit" id="formSubmit">
+            <span data-i18n="form.send">Envoyer</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="form__notice" id="formNotice"></p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="seam seam--dark" aria-hidden="true"><span></span></div>
+
+  <!-- ==============================
+       FOOTER
+  =============================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="logo.svg" alt="EGS Trading" class="footer__logo" />
+          <p class="footer__tagline" data-i18n="footer.tagline">Négoce international FMCG &amp; commodities</p>
+        </div>
+        <nav class="footer__nav">
+          <a href="#activite" data-i18n="nav.activity">Activité</a>
+          <a href="#marches" data-i18n="nav.markets">Marchés</a>
+          <a href="#approche" data-i18n="nav.approach">Approche</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__legal">
+          &copy; 2025 EGS Trading &mdash; SIREN 942 706 870 &mdash; 233 Chemin de Bellevue, 84260 Sarrians
+        </p>
+        <div class="footer__legal-links">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <span>·</span>
+          <a href="cgv.html">CGV</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=5"></script>
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script src="motion.js?v=1"></script>
+</body>
+</html>
