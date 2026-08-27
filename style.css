@@ -861,10 +861,95 @@ ul  { list-style: none; }
   .hero__frame { display: none; }
 }
 
+/* ============================================================
+   ILLUSTRATIONS
+   Self-authored isometric line-art (img/*.svg), generated from
+   the same tokens as the rest of the design system — no new
+   colors, no stock imagery. Always sits behind real content:
+   each host gets position:relative and its non-illustration
+   children get z-index:1 so text is never obscured.
+   ============================================================ */
+.hero__scene {
+  position: absolute;
+  top: 130px; right: 4%;
+  width: min(28vw, 400px);
+  height: auto;
+  opacity: .7;
+  z-index: 1;
+  pointer-events: none;
+}
+@media (max-width: 1024px) {
+  .hero__scene { display: none; }
+}
+
+.market-card { position: relative; overflow: hidden; }
+.market-card > *:not(.market-card__scene) { position: relative; z-index: 1; }
+.market-card__scene {
+  position: absolute;
+  right: -6%; bottom: -10%;
+  width: 62%;
+  height: auto;
+  opacity: .9;
+  pointer-events: none;
+}
+@media (max-width: 640px) {
+  .market-card__scene { width: 76%; opacity: .65; }
+}
+
+.about__content { position: relative; overflow: hidden; }
+.about__content > *:not(.about__watermark) { position: relative; z-index: 1; }
+.about__watermark {
+  position: absolute;
+  top: -24px; right: -40px;
+  width: 560px;
+  max-width: 62%;
+  height: auto;
+  opacity: .5;
+  pointer-events: none;
+}
+@media (max-width: 900px) {
+  .about__watermark { display: none; }
+}
+
+.approach__right { position: relative; overflow: hidden; }
+.approach__right > *:not(.approach__watermark) { position: relative; z-index: 1; }
+.approach__watermark {
+  position: absolute;
+  top: 6%; right: -30px;
+  width: 480px;
+  max-width: 55%;
+  height: auto;
+  opacity: .6;
+  pointer-events: none;
+}
+@media (max-width: 900px) {
+  .approach__watermark { display: none; }
+}
+
+.contact__left { position: relative; overflow: hidden; }
+.contact__left > *:not(.contact__map) { position: relative; z-index: 1; }
+.contact__map {
+  position: absolute;
+  left: -20px; bottom: -40px;
+  width: 340px;
+  max-width: 92%;
+  height: auto;
+  opacity: .55;
+  pointer-events: none;
+}
+@media (max-width: 900px) {
+  .contact__map { display: none; }
+}
+
 /* ---- Perf hints for elements the motion system animates often ---- */
 .hero__title-row,
 .market-card,
 .principle,
-.client-type {
+.client-type,
+.hero__scene,
+.market-card__scene,
+.about__watermark,
+.approach__watermark,
+.contact__map {
   will-change: transform, opacity;
 }

@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700">
+<g transform="translate(120,120)">
+<polygon points="0.0,-46.0 84.0,-4.0 42.0,17.0 -42.0,-25.0" fill="#dbd8d8" />
+<polygon points="84.0,42.0 42.0,63.0 42.0,17.0 84.0,-4.0" fill="#5a1f2d" />
+<polygon points="-42.0,21.0 42.0,63.0 42.0,17.0 -42.0,-25.0" fill="#3e1520" />
+<polygon points="0.0,-46.0 84.0,-4.0 42.0,17.0 -42.0,-25.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<polygon points="84.0,42.0 42.0,63.0 42.0,17.0 84.0,-4.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<polygon points="-42.0,21.0 42.0,63.0 42.0,17.0 -42.0,-25.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<line x1="84.0" y1="26.7" x2="42.0" y2="47.7" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="-42.0" y1="5.7" x2="42.0" y2="47.7" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="84.0" y1="11.3" x2="42.0" y2="32.3" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="-42.0" y1="-9.7" x2="42.0" y2="32.3" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<polygon points="84.0,-4.0 168.0,38.0 126.0,59.0 42.0,17.0" fill="#dbd8d8" />
+<polygon points="168.0,84.0 126.0,105.0 126.0,59.0 168.0,38.0" fill="#7a3040" />
+<polygon points="42.0,63.0 126.0,105.0 126.0,59.0 42.0,17.0" fill="#5a1f2d" />
+<polygon points="84.0,-4.0 168.0,38.0 126.0,59.0 42.0,17.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<polygon points="168.0,84.0 126.0,105.0 126.0,59.0 168.0,38.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<polygon points="42.0,63.0 126.0,105.0 126.0,59.0 42.0,17.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<line x1="168.0" y1="68.7" x2="126.0" y2="89.7" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="42.0" y1="47.7" x2="126.0" y2="89.7" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="168.0" y1="53.3" x2="126.0" y2="74.3" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="42.0" y1="32.3" x2="126.0" y2="74.3" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<polygon points="-42.0,-25.0 42.0,17.0 0.0,38.0 -84.0,-4.0" fill="#dbd8d8" />
+<polygon points="42.0,63.0 0.0,84.0 0.0,38.0 42.0,17.0" fill="#5a1f2d" />
+<polygon points="-84.0,42.0 0.0,84.0 0.0,38.0 -84.0,-4.0" fill="#3e1520" />
+<polygon points="-42.0,-25.0 42.0,17.0 0.0,38.0 -84.0,-4.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<polygon points="42.0,63.0 0.0,84.0 0.0,38.0 42.0,17.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<polygon points="-84.0,42.0 0.0,84.0 0.0,38.0 -84.0,-4.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<line x1="42.0" y1="47.7" x2="0.0" y2="68.7" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="-84.0" y1="26.7" x2="0.0" y2="68.7" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="42.0" y1="32.3" x2="0.0" y2="53.3" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="-84.0" y1="11.3" x2="0.0" y2="53.3" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<polygon points="0.0,-92.0 84.0,-50.0 42.0,-29.0 -42.0,-71.0" fill="#dbd8d8" />
+<polygon points="84.0,-4.0 42.0,17.0 42.0,-29.0 84.0,-50.0" fill="#7a3040" />
+<polygon points="-42.0,-25.0 42.0,17.0 42.0,-29.0 -42.0,-71.0" fill="#5a1f2d" />
+<polygon points="0.0,-92.0 84.0,-50.0 42.0,-29.0 -42.0,-71.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<polygon points="84.0,-4.0 42.0,17.0 42.0,-29.0 84.0,-50.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<polygon points="-42.0,-25.0 42.0,17.0 42.0,-29.0 -42.0,-71.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<line x1="84.0" y1="-19.3" x2="42.0" y2="1.7" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="-42.0" y1="-40.3" x2="42.0" y2="1.7" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="84.0" y1="-34.7" x2="42.0" y2="-13.7" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="-42.0" y1="-55.7" x2="42.0" y2="-13.7" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<polygon points="84.0,-50.0 126.0,-29.0 84.0,-8.0 42.0,-29.0" fill="#dbd8d8" />
+<polygon points="126.0,17.0 84.0,38.0 84.0,-8.0 126.0,-29.0" fill="#5a1f2d" />
+<polygon points="42.0,17.0 84.0,38.0 84.0,-8.0 42.0,-29.0" fill="#3e1520" />
+<polygon points="84.0,-50.0 126.0,-29.0 84.0,-8.0 42.0,-29.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<polygon points="126.0,17.0 84.0,38.0 84.0,-8.0 126.0,-29.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<polygon points="42.0,17.0 84.0,38.0 84.0,-8.0 42.0,-29.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<line x1="126.0" y1="1.7" x2="84.0" y2="22.7" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="42.0" y1="1.7" x2="84.0" y2="22.7" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="126.0" y1="-13.7" x2="84.0" y2="7.3" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="42.0" y1="-13.7" x2="84.0" y2="7.3" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<polygon points="-42.0,-71.0 0.0,-50.0 -42.0,-29.0 -84.0,-50.0" fill="#dbd8d8" />
+<polygon points="0.0,-4.0 -42.0,17.0 -42.0,-29.0 0.0,-50.0" fill="#7a3040" />
+<polygon points="-84.0,-4.0 -42.0,17.0 -42.0,-29.0 -84.0,-50.0" fill="#5a1f2d" />
+<polygon points="-42.0,-71.0 0.0,-50.0 -42.0,-29.0 -84.0,-50.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<polygon points="0.0,-4.0 -42.0,17.0 -42.0,-29.0 0.0,-50.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<polygon points="-84.0,-4.0 -42.0,17.0 -42.0,-29.0 -84.0,-50.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<line x1="0.0" y1="-19.3" x2="-42.0" y2="1.7" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="-84.0" y1="-19.3" x2="-42.0" y2="1.7" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="0.0" y1="-34.7" x2="-42.0" y2="-13.7" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="-84.0" y1="-34.7" x2="-42.0" y2="-13.7" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<polygon points="0.0,-96.0 84.0,-54.0 42.0,-33.0 -42.0,-75.0" fill="#dbd8d8" />
+<polygon points="84.0,-8.0 42.0,13.0 42.0,-33.0 84.0,-54.0" fill="#5a1f2d" />
+<polygon points="-42.0,-29.0 42.0,13.0 42.0,-33.0 -42.0,-75.0" fill="#3e1520" />
+<polygon points="0.0,-96.0 84.0,-54.0 42.0,-33.0 -42.0,-75.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<polygon points="84.0,-8.0 42.0,13.0 42.0,-33.0 84.0,-54.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<polygon points="-42.0,-29.0 42.0,13.0 42.0,-33.0 -42.0,-75.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<line x1="84.0" y1="-23.3" x2="42.0" y2="-2.3" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="-42.0" y1="-44.3" x2="42.0" y2="-2.3" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="84.0" y1="-38.7" x2="42.0" y2="-17.7" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="-42.0" y1="-59.7" x2="42.0" y2="-17.7" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<polygon points="42.0,17.0 126.0,59.0 84.0,80.0 0.0,38.0" fill="#dbd8d8" />
+<polygon points="126.0,105.0 84.0,126.0 84.0,80.0 126.0,59.0" fill="#7a3040" />
+<polygon points="0.0,84.0 84.0,126.0 84.0,80.0 0.0,38.0" fill="#5a1f2d" />
+<polygon points="42.0,17.0 126.0,59.0 84.0,80.0 0.0,38.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<polygon points="126.0,105.0 84.0,126.0 84.0,80.0 126.0,59.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<polygon points="0.0,84.0 84.0,126.0 84.0,80.0 0.0,38.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<line x1="126.0" y1="89.7" x2="84.0" y2="110.7" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="0.0" y1="68.7" x2="84.0" y2="110.7" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="126.0" y1="74.3" x2="84.0" y2="95.3" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="0.0" y1="53.3" x2="84.0" y2="95.3" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<polygon points="126.0,-75.0 168.0,-54.0 126.0,-33.0 84.0,-54.0" fill="#dbd8d8" />
+<polygon points="168.0,-8.0 126.0,13.0 126.0,-33.0 168.0,-54.0" fill="#5a1f2d" />
+<polygon points="84.0,-8.0 126.0,13.0 126.0,-33.0 84.0,-54.0" fill="#3e1520" />
+<polygon points="126.0,-75.0 168.0,-54.0 126.0,-33.0 84.0,-54.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<polygon points="168.0,-8.0 126.0,13.0 126.0,-33.0 168.0,-54.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<polygon points="84.0,-8.0 126.0,13.0 126.0,-33.0 84.0,-54.0" fill="none" stroke="#dbd8d8" stroke-width="0.7" />
+<line x1="168.0" y1="-23.3" x2="126.0" y2="-2.3" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="84.0" y1="-23.3" x2="126.0" y2="-2.3" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="168.0" y1="-38.7" x2="126.0" y2="-17.7" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<line x1="84.0" y1="-38.7" x2="126.0" y2="-17.7" stroke="#dbd8d8" stroke-width="0.7" opacity="0.6" />
+<path d="M -60 260 Q 420 40 760 300" fill="none" stroke="#dbd8d8" stroke-width="1" stroke-dasharray="1 7" stroke-linecap="round" opacity="0.5" />
+<circle cx="-60" cy="260" r="2.6" fill="#dbd8d8" opacity="0.65" />
+<circle cx="-60" cy="260" r="6" fill="none" stroke="#dbd8d8" stroke-width="0.6" opacity="0.35" />
+<circle cx="760" cy="300" r="2.6" fill="#dbd8d8" opacity="0.65" />
+<circle cx="760" cy="300" r="6" fill="none" stroke="#dbd8d8" stroke-width="0.6" opacity="0.35" />
+<path d="M -40 380 Q 300 520 700 160" fill="none" stroke="#dbd8d8" stroke-width="1" stroke-dasharray="1 7" stroke-linecap="round" opacity="0.5" />
+<circle cx="-40" cy="380" r="2.6" fill="#dbd8d8" opacity="0.65" />
+<circle cx="-40" cy="380" r="6" fill="none" stroke="#dbd8d8" stroke-width="0.6" opacity="0.35" />
+<circle cx="700" cy="160" r="2.6" fill="#dbd8d8" opacity="0.65" />
+<circle cx="700" cy="160" r="6" fill="none" stroke="#dbd8d8" stroke-width="0.6" opacity="0.35" />
+<path d="M 60 60 Q 500 260 780 500" fill="none" stroke="#dbd8d8" stroke-width="1" stroke-dasharray="1 7" stroke-linecap="round" opacity="0.5" />
+<circle cx="60" cy="60" r="2.6" fill="#dbd8d8" opacity="0.65" />
+<circle cx="60" cy="60" r="6" fill="none" stroke="#dbd8d8" stroke-width="0.6" opacity="0.35" />
+<circle cx="780" cy="500" r="2.6" fill="#dbd8d8" opacity="0.65" />
+<circle cx="780" cy="500" r="6" fill="none" stroke="#dbd8d8" stroke-width="0.6" opacity="0.35" />
+</g>
+</svg>

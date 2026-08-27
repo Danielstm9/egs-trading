@@ -211,10 +211,16 @@
       .to('.hero__scroll-cta, .hero__year', { autoAlpha: 1, y: 0, duration: 0.8, ease: 'power2.out', stagger: 0.1 }, '-=0.55')
       .to('.hero__frame-mark', { autoAlpha: 1, duration: 1, ease: 'power1.out', stagger: 0.08 }, '-=0.7');
 
+    const heroScene = document.querySelector('.hero__scene');
     if (!isTouch && heroInner) {
       const heroX = gsap.quickTo(heroInner, 'x', { duration: 0.9, ease: 'power2.out' });
+      const sceneX = heroScene ? gsap.quickTo(heroScene, 'x', { duration: 1.1, ease: 'power2.out' }) : null;
+      const sceneY = heroScene ? gsap.quickTo(heroScene, 'y', { duration: 1.1, ease: 'power2.out' }) : null;
       window.addEventListener('mousemove', (e) => {
-        heroX((e.clientX / window.innerWidth - 0.5) * 16);
+        const relX = e.clientX / window.innerWidth - 0.5;
+        const relY = e.clientY / window.innerHeight - 0.5;
+        heroX(relX * 16);
+        if (sceneX) { sceneX(relX * -34); sceneY(relY * -20); }
       }, { passive: true });
     }
 
@@ -234,6 +240,7 @@
         .to('.hero__footer', { opacity: 0, y: 30, ease: 'none' }, 0.05)
         .to('.hero__year, .hero__frame-mark', { opacity: 0, ease: 'none' }, 0);
       if (heroCanvas) heroTl.to(heroCanvas, { scale: 1.25, filter: 'brightness(0.55)', ease: 'none' }, 0);
+      if (heroScene) heroTl.to(heroScene, { opacity: 0, x: '+=50', scale: 1.1, ease: 'none' }, 0);
 
       return () => heroTl.scrollTrigger && heroTl.scrollTrigger.kill();
     });
@@ -349,6 +356,25 @@
   });
 
   /* ---------------------------------------------------------
+     Watermark illustrations — gentle scroll-linked parallax
+  --------------------------------------------------------- */
+  function parallaxWatermark(selector, sectionSelector, distance) {
+    const el = document.querySelector(selector);
+    const section = document.querySelector(sectionSelector);
+    if (!el || !section) return;
+    gsap.fromTo(
+      el,
+      { y: -distance },
+      { y: distance, ease: 'none', scrollTrigger: { trigger: section, start: 'top bottom', end: 'bottom top', scrub: 0.6 } }
+    );
+  }
+  mm.add(DESKTOP, () => {
+    parallaxWatermark('.about__watermark', '.about', 40);
+    parallaxWatermark('.approach__watermark', '.approach', 36);
+    parallaxWatermark('.contact__map', '.contact', 28);
+  });
+
+  /* ---------------------------------------------------------
      Marchés — pinned choreography (desktop) / simple reveal (mobile)
   --------------------------------------------------------- */
   const marketsSection = document.querySelector('.markets');
@@ -368,7 +394,8 @@
       });
       marketsTl
         .to(marketCards, { clipPath: 'inset(0% 0% 0% 0%)', scale: 1, ease: 'none', stagger: 0.15 }, 0)
-        .to('.market-card__num', { opacity: 1, y: 0, ease: 'none', stagger: 0.15 }, 0.15);
+        .to('.market-card__num', { opacity: 1, y: 0, ease: 'none', stagger: 0.15 }, 0.15)
+        .fromTo('.market-card__scene', { scale: 1.12, opacity: 0 }, { scale: 1, opacity: 0.9, ease: 'none', stagger: 0.15 }, 0.1);
 
       return () => marketsTl.scrollTrigger && marketsTl.scrollTrigger.kill();
     });
